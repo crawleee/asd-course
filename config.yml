@@ -1,0 +1,16 @@
+title: asd
+description: asd
+template:
+  repo: asd-template
+  name: asd
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
